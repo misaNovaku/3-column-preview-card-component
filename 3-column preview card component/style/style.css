@@ -1,0 +1,153 @@
+
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #fff;
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+/*Reusable*/
+
+h1, h2,h3,h4,h5,h6{
+   font-family: 'Lexend Deca',sans-serif;
+   font-weight: 400;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+   font-family: 'Big Shoulders Display',sans-serif;
+
+   font-size: 1rem;
+}
+
+ a,h1 , .playground {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+code {
+    display: block;
+    padding: 1em 0;
+}
+
+.title {
+   
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin: 2em 0;
+}
+
+.playground {
+    padding: 2em;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 100px auto;
+}
+
+.card  {
+    padding: 2em 0em;
+}
+
+.sedan-card , .suv-card , .luxury-card {
+    color: #fff;
+    padding: 2em;
+     padding-top: 2em;
+     padding-bottom: 4em;
+}
+
+.sedan-card {
+    border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.sedan-card-color {
+    background-color: hsl(31, 77%, 52%);   
+}
+
+.suv-card-color {
+    background-color: hsl(184, 100%, 22%);
+     
+}
+
+.luxury-card {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; 
+}
+
+.luxury-card-color {
+      background-color: hsl(179, 100%, 13%); 
+}
+
+.link {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    padding: .5em 1em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: opacity 250ms ease-in;
+
+    font-size: 1.1rem;
+}
+
+.link:active , .link:hover {
+   opacity:.6;
+}
+
+ .attribution .link {
+     background-color: transparent;
+     color: hsl(184, 37%, 52%);
+
+
+     font-size: 1.1rem;
+ }
+
+ .attribution code {
+     font-size: 1rem;
+ }
+
+
+@media (min-width:500px) {
+
+    .flex-box {
+        display: flex;
+    }
+
+    .luxury-card {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+         border-bottom-left-radius: 0px;
+       
+    }
+
+    .sedan-card {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    code {
+        display: inline-block;
+        padding: 1em 0;
+
+        font-size: 1.2rem;
+    }
+
+    .attribution .link {
+       background-color: transparent;
+       color: hsl(184, 37%, 52%);
+
+       font-size: 1.1rem;
+    }
+}
+
